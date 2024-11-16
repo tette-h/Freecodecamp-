@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Survey Form</title>
+
+    </head>
+
+<body>
+
+
+
+    <h1 id="title">Survey Form</h1>
+
+    <p id="description">Please fill out this survey to help us improve our services.</p>
+
+
+
+    <form id="survey-form">
+
+        <label id="name-label" for="name">Name:</label>
+
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+
+
+        <label id="email-label" for="email">Email:</label>
+
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+
+
+        <label id="number-label" for="number">Age:</label>
+
+        <input type="number" id="number" placeholder="Enter your age" min="1" max="120" required>
+
+
+
+        <label for="dropdown">Favorite Programming Language:</label>
+
+        <select id="dropdown" required>
+
+            <option value="" disabled selected>Select your option</option>
+
+            <option value="javascript">JavaScript</option>
+
+            <option value="python">Python</option>
+
+            <option value="java">Java</option>
+
+            <option value="csharp">C#</option>
+
+        </select>
+
+
+
+        <fieldset>
+
+            <legend>What is your experience level?</legend>
+
+            <label>
+
+                <input type="radio" name="experience" value="beginner" required> Beginner
+
+            </label>
+
+            <label>
+
+                <input type="radio" name="experience" value="intermediate"> Intermediate
+
+            </label>
+
+            <label>
+
+                <input type="radio" name="experience" value="expert"> Expert
+
+            </label>
+
+        </fieldset>
+
+
+
+        <fieldset>
+
+            <legend>Which frameworks do you use? (Select all that apply)</legend>
+
+            <label>
+
+                <input type="checkbox" value="react"> React
+
+            </label>
+
+            <label>
+
+                <input type="checkbox" value="angular"> Angular
+
+            </label>
+
+            <label>
+
+                <input type="checkbox" value="vue"> Vue
+
+            </label>
+
+            <label>
+
+                <input type="checkbox" value="none"> None
+
+            </label>
+
+        </fieldset>
+
+
+
+        <label for="comments">Additional Comments:</label>
+
+        <textarea id="comments" placeholder="Enter your comments here..." rows="4"></textarea>
+
+
+
+        <button id="submit" type="submit">Submit</button>
+
+    </form>
+
+
+
+</body>
+
+</html>
